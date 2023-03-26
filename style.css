@@ -10,6 +10,10 @@ body {
     padding: 0;
 }
 
+.desktop {
+    display: none;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -19,7 +23,7 @@ body {
     border-radius: 10px;
 }
 
-.card img {
+.image img {
     max-width: 100%;
     border-radius: 10px 10px 0 0;
 }
@@ -94,18 +98,27 @@ body {
     body {
         font-size: 100%;
     }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
     .card {
         flex-direction: row;
         width: 40rem;
     }
 
-    .card img {
+    .image img {
         border-radius: 10px 0 0 10px;
     }
 
-    picture,
+    .image,
     .main {
-        flex: 0 0 50%;
+        flex: 1 1 50%;
     }
 
     .main {
